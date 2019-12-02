@@ -11,3 +11,8 @@ with valid \<token> and \<day>, then pipe with `sed` command of the day.
 ```bash
 sed ':a;N;$!ba;s/\n/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```
+
+### Day2
+```bash
+sed 's/\x2C/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
+```
