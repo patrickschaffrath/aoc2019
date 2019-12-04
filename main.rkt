@@ -4,6 +4,7 @@
     "src/day1.rkt"
     "src/day2.rkt"
     "src/day3.rkt"
+    "src/day4.rkt"
 )
 
-(3-2)
+(4-2)
