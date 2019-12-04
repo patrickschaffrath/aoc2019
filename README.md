@@ -16,3 +16,8 @@ sed ':a;N;$!ba;s/\n/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```bash
 sed 's/\x2C/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```
+
+### Day3
+```bash
+sed -r ':a;N;$!ba;s/([U,D,L,R])([0-9]+)/\(\#\\\1 \2\)/g;s/\x2C/\x20/g;s/(.*)\n(.*)/\(define wire-one \x27\(\1\)\)\n\n\(define wire-two \x27\(\2\)\)/'
+```
