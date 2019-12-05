@@ -26,3 +26,8 @@ sed -r ':a;N;$!ba;s/([U,D,L,R])([0-9]+)/\(\#\\\1 \2\)/g;s/\x2C/\x20/g;s/(.*)\n(.
 ```bash
 sed 's/\x2D/\x20/;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```
+
+### Day5
+```bash
+sed 's/\x2C/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
+```
