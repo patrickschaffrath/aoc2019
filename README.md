@@ -31,3 +31,8 @@ sed 's/\x2D/\x20/;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```bash
 sed 's/\x2C/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
 ```
+
+### Day6
+```bash
+sed -r ':a;N;$!ba;s/(.{3})[)](.{3})/\(\x22\1\x22 \x22\2\x22\)/g;s/\n/\x20/g;s/^/\(define input \x27\(/;s/$/\)\)/'
+```

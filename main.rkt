@@ -6,6 +6,7 @@
     "src/day3.rkt"
     "src/day4.rkt"
     "src/day5.rkt"
+    "src/day6.rkt"
 )
 
-(5-2)
+(6-2)
